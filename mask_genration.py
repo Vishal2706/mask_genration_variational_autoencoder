@@ -5,9 +5,9 @@ from os import listdir
 import pickle
 import numpy as np
 
-f1 = open('Input_images.vg', 'rb')
+f1 = open('Input_images.vg', 'rb') # training input image saved in pickle Object file(SIZE is too big to Upload).
 j = pickle.load(f1)
-f2 = open('Label_images.vg', 'rb')
+f2 = open('Label_images.vg', 'rb') # training output mask_images same as above.
 m = pickle.load(f2)
 
 input_image = Input(shape=[64, 32, 1])
